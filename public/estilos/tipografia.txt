@@ -1,0 +1,10 @@
+Roboto
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
