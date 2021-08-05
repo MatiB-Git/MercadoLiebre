@@ -5,19 +5,16 @@
     margin: 0px;
 }
 
+li{
+    list-style: none;
+}
+
 body{
 background-color: #ebebeb;
 }
 
 header{
     background-color: #EAC926;
-}
-
-header a img{
-    margin-top:10px;
-    margin-bottom: 0px;
-    padding: 0px;
-
 }
 
 .burguer-menu {
@@ -32,9 +29,14 @@ header a img{
     
 }
 
-.fas fa-bars{
+.fa-bars{
     padding:auto;
 }
+
+.contenedor{
+    display:flex;
+}
+
 
 .menu {
     width: 50px;
@@ -46,14 +48,24 @@ header a img{
     border-radius: 10%;
     background-color:#03264C;
 }
-.menu:hover{
-    background-color: blanchedalmond;
+
+.fa-id-card{
+margin-left: 4px;
 }
+
+.fa-sign-in-alt{
+    margin-left: 4px;
+}
+
+.fa-shopping-basket{
+    margin-left: 4px;
+}
+            
 
 .icono-busqueda{
     border: solid 1px black;
     background-color: white;
-    margin-left: 20px;
+    margin-left: 15px;
     margin-bottom: 10px;
 }
 
@@ -61,7 +73,7 @@ header a img{
     display: inline-block;
     border: solid 1px #000000;
     background-color: white;
-    margin-left: 20px;
+    margin-left: 15px;
     padding: 2px;
     padding-right: 20px;
     color: rgba(0, 0, 0, 0.5);
@@ -77,9 +89,15 @@ header a img{
 .titulo{
     margin-bottom: 15px;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
+
 }
 
+main{
+    background-color: rgb(255, 255, 255);
+    width: 92%;
+    margin: 0px auto;
+}
 .lista{
     padding-left: 15px;
     margin-bottom: 10px;
@@ -91,28 +109,42 @@ header a img{
 }
 
 .lista2{
+    display:flex;
+    flex-wrap: wrap;
+    width: 40%;
     padding-left: 15px;
     margin-bottom: 50px;
     padding-left: 2px;
     list-style: none;
 }
 
-header a img{
-    width: 150px;
+.logo{
+    width: 130px;
     height: 50px;
+    margin-top: 15px;
     margin-left: 25px;
 }
 
 .precio{
-    font-size:18px
+    font-size:1 8px
+    colorrgb(102, 101, 101);
+}
+
+.titulo-principal{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
 }
 
 .descuento{
     font-size: 16px;
+    color: #39b54a;
 }
 
 .descripcion{
     font-size:16px;
+    color: #666;
 }
 
 
@@ -126,20 +158,23 @@ header a img{
     font-size: 20px;
     margin-top: 10px;
     margin-left: 20px;
+    padding-bottom: 20px;
 }
 
 
 .etiqueta {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
 }
 
-hr{
-    margin-bottom: 30px;
-}
-
-#copy {
+.copy {
+    display:flex;
     margin-top: 80px;
-    text-align: center;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.copy-text{
+    font-size: 12px;
 }
 
 .seccion{
@@ -147,5 +182,37 @@ hr{
 }
 
 .lista-footer{
+    display:flex;
+    align-content: center;
     list-style: none;
+}
+
+.footer{
+    margin: 0px auto;
+    margin:5px;
+    background-color: white;
+    border: solid 1px #ebebeb;
+
+}
+
+.icono-footer{
+    fill: #1259c3;
+    width: 2em;
+    height: 2em;
+    margin-left: 40vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.titulo-footer{
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.descripcion-footer{
+    color: #666;
+    font-size: 12px;
+    text-align: center;
 }
