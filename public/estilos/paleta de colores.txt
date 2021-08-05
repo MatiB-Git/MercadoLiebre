@@ -1,8 +1,0 @@
-Paleta de colores:
-
-Amarillo: #EAC926
-Azul: #03264C
-Celeste: class="icono-footer"
-Gris oscuro: #666
-Gris claro: #ebebeb
-Verde: #39b54a

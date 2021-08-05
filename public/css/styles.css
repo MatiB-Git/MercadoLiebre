@@ -1,5 +1,6 @@
 
 *{
+    font-family:Roboto;
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
@@ -77,11 +78,13 @@ margin-left: 4px;
     padding: 2px;
     padding-right: 20px;
     color: rgba(0, 0, 0, 0.5);
+    
 }
 
 .seccion{
     font-size: 24px;
     margin-top: 10px;
+    padding-top: 10px;
 }
 .parrafo1{
     margin-bottom: 10px;
@@ -98,7 +101,7 @@ main{
     width: 92%;
     margin: 0px auto;
 }
-.lista{
+.lista-nav1{
     padding-left: 15px;
     margin-bottom: 10px;
     margin-top: 20px;
@@ -108,14 +111,15 @@ main{
     font-size: 14px;
 }
 
-.lista2{
+.lista-nav2{
     display:flex;
     flex-wrap: wrap;
-    width: 40%;
+    width: 45%;
     padding-left: 15px;
     margin-bottom: 50px;
     padding-left: 2px;
-    list-style: none;
+    align-items: center;
+    font-size:14px;
 }
 
 .logo{
@@ -126,8 +130,7 @@ main{
 }
 
 .precio{
-    font-size:1 8px
-    colorrgb(102, 101, 101);
+    font-size:18px
 }
 
 .titulo-principal{
@@ -144,11 +147,10 @@ main{
 
 .descripcion{
     font-size:16px;
-    color: #666;
 }
 
 
- .producto{
+ .imagen-articulo{
      margin: 30px 30px 30px 30px;
      width: 200px;
      height: 200px;
@@ -196,23 +198,20 @@ main{
 }
 
 .icono-footer{
-    fill: #1259c3;
     width: 2em;
     height: 2em;
     margin-left: 40vw;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .titulo-footer{
-    color: #666;
     font-size: 16px;
     text-align: center;
     margin-top: 5px;
 }
 
 .descripcion-footer{
-    color: #666;
     font-size: 12px;
     text-align: center;
 }
