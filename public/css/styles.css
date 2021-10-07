@@ -4,6 +4,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Roboto';
 }
 
 :root{
@@ -15,8 +16,6 @@
     --colorVerde:#39b54a;
     --tipografia:'Roboto'
 }
-
-
 
 li {
 list-style: none;
@@ -32,7 +31,7 @@ body{
 
 header{
     width: 100vw;
-    height: 370px;
+    padding-bottom: 10px;
     background-color: var(--colorAmarillo);
 }
 
@@ -66,17 +65,11 @@ header{
     justify-content: center;
     width: 90%;
     margin: 10px 10px;
-    border: solid 1px black;
     font-size: 16px;
 }
 
 .navegacion{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 40%;
-    height: 150px;
-    border: solid 1px black;
+    display: none;
 }
 
 .lista-nav2 i{
@@ -120,24 +113,58 @@ article{
     justify-content: center;
     align-items: center;
     margin:10px;
-    border: solid 1px black;
     background-color: white;
+    padding: 15px;
 }
 
+article .contenedor-descripcion {
+    width: 100%;
+    margin:15px;
+    border-top: solid 1px #ebebeb;
+    padding-top: 15px;
+    position: relative;
+}
 article p{
     align-self: flex-start;
 
 }
 
+article p i {
+    display: block;
+    color: var(--colorVerde);
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.precio-descuento{
+display: flex;
+width: 50%;
+align-items: center;
+}
+
 .precio{
+display: block;
 font-size: 18px;
+flex-grow: 0.3;
 }
 
 .descuento{
+display: block;
 font-size:16px;
+color: var(--colorVerde);
+flex-grow: 0.7;
 }
 
 .nombre-producto{
+display: none;
 font-weight: 600;
 }
 
@@ -148,10 +175,59 @@ font-weight: 600;
 }
 
 
+.contenedor-iconos{
+    margin-top: 24px;
+   
+}
 
+.contenedor-iconos h6{
+    font-size: 18px;
+    font-weight: 800;
+}
 
+.contenedor-iconos div{
+    width: 100vw;
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.contenedor-iconos div p i{
+    color: var(--colorCeleste);
+    font-size: 26px;
+}
 
+.contenedor-iconos .subtitulo{
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+    margin-top: 5px;
 
+}
 
+.copy{
+    margin-top: 50px;
+    text-align: center;
+}
 
+@media (min-width:361px){
+    article .contenedor-descripcion .nombre-producto{
+        display: inline-block;
+        font-weight: 600;
+        padding-top: 15px;
+    }
+
+    .navegacion{
+        display: contents;
+    }
+
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media (min-width:769px){
+    
+}
