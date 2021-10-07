@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Registro</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../public/css/general.css">
     
 
 </head>
-<body>
+<body class="register">
     <!--HEADER-->
     <header>
         <div class="logo-busqueda">
@@ -40,7 +40,7 @@
             </ul>
                 
             <ul class="lista-nav2">
-            <li><a href="">Crea tu cuenta</a><i class="far fa-id-card"></i></li>
+            <li><a href="./register.html">Crea tu cuenta</a><i class="far fa-id-card"></i></li>
             <li><a href="./login.html">Ingresa</a><i class="fas fa-sign-in-alt"></i></li>
             <li><a href="">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
             </ul>
@@ -52,24 +52,101 @@
     </header>
 
     <main class="main-login">
-        <h1 class="titulo">¡Hola! Ingresa tu nombre y contraseña</h1>
-         <div class="contenedor-form">
+        <h1 class="titulo">¡Hola! Ingresa tus datos</h1>
+         <div class="form-register">
        
         <form class="formulario" action="./home.html">
 
+            <!--NOMBRE Y APELLIDO-->
            <div class="nombre">
-                <input class="input-nombre" type="text" name="name" id="id" placeholder="ingresa tu nombre">
+               <h3>Nombre y apellido</h3>
+                <input class="input-nombre" type="text" name="name" id="id" placeholder="Nombre y apellido">
             </div>
 
-             <div class="contraseña">
-                <input class="input-contraseña" type="password" name="password" id="password" placeholder="ingresa tu contraseña">
+            <!--NOMBRE DE USUARIO-->
+             <div class="contenedor">
+                <h3>Nombre de usuario</h3>
+                <input class="input-contraseña" type="text" name="username" id="username" placeholder="Nombre de usuario">
               </div>
 
-              <div class="container-btn">
-            <button class="btn-ingresar" type="submit">Ingresar</button>
-        </div>
+              <!--FECHA DE NACIMIENTO-->
+              <div class="contenedor">
+                <h3>Fecha de nacimiento</h3>
+                <input class="input-contraseña" type="date" name="password" id="password" placeholder="Fecha de nacimiento">
+              </div>
 
+              <!--DOMICILIO-->
+              <div class="contenedor">
+                <h3>Domicilio</h3>
+                <input class="input-contraseña" type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+              </div>
+
+              <!--PERFIL DE USUARIO-->
+              <div class="prefil-usuario">
+                <h3>Perfil de usuario</h3>
+                <input class="input-prefil" type="radio" value="comprador" name="perfil" id="comprador">
+                <label for="comprador">Comprador</label>
+                <input class="input-prefil" type="radio" value="vendedor" name="perfil" id="vendedor">
+                <label for="vendedor">Vendedor</label>
+              </div>
+
+
+              <!--INTERESES-->
+              <div class="contenedor">
+                <h3>Intereses</h3>
+                <input class="input-intereses" type="checkbox" value="Electro" name="intereses" id="electro">
+                <label for="electro">Electro</label>
+              </div>
+              <div class="contenedor">
+               
+                <input class="input-intereses" type="checkbox" value="moda" name="intereses" id="moda">
+                <label for="moda">Moda</label>
+              </div>
+              <div class="contenedor">
+                
+                <input class="input-intereses" type="checkbox" value="jugueteria" name="intereses" id="jugueteria">
+                <label for="jugueteria">Jugueteria</label>
+              </div>
+              <div class="contenedor">
+               
+                <input class="input-intereses" type="checkbox" value="hogar" name="intereses" id="hogar">
+                <label for="hogar">Hogar</label>
+              </div>
+              <div class="contenedor">
+                
+                <input class="input-intereses" type="checkbox" value="vida-sana" name="intereses" id="vida-sana">
+                <label for="vida-sana">Vida sana</label>
+              </div>
+
+
+              <!--FOTO DE PERFIL-->
+              <div class="contenedor">
+                  <h3>Foto de perfil</h3>
+                <input class="input-intereses" type="file" value="foto" name="foto" id="foto">
+                <label for="moda">Foto de perfil</label>
+              </div>
+
+              <!--CONTRASEÑA-->
+              <div class="contenedor">
+                <h3>Contraseña</h3>
+                <input class="input-contraseña" type="password" name="pass" placeholder="Contraseña" minlength="8">
+              </div>
+
+              <!--REPETIR CONTRASEÑA-->
+              <div class="contenedor">
+                <h3>Repetir contraseña</h3>
+                <input class="input-contraseña" type="password" name="repeat-pass" placeholder="Repetir contraseña" minlength="8">
+              </div>
+
+
+              <!--BOTONES-->
+            <div class="container-btn">
+                <button class="btn-registrarse" type="submit">Registrarse</button>
+                <button class="btn-registrarse" type="reset">Resetear</button>
+            </div>
         </form>
+        
+       
     </div>
     </main>
 

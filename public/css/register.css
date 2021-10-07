@@ -1,0 +1,80 @@
+.register .titulo{
+    margin: 0 auto;
+    margin: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    
+}
+
+.register .form-register {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        max-width: 80%;
+        height: 100%;
+        border: solid 1px #fff;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 0 auto;
+       
+    }
+
+    .register .form-register div {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .register .formulario{
+        display: flex;
+        width: 90%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    
+    .register .nombre{
+    width:70%;
+    }
+    
+    .register .input-nombre{
+        width: 100%;
+        height: 40px;
+    }
+    
+    .register .contenedor{
+    width:70%;
+    }
+    
+    .register .input-contraseña{
+        width:100%;
+        height: 40px;
+    }
+    
+    
+    .register .container-btn{
+        display: flex;
+        width: 50%;;
+    }
+    
+    .register .btn-registrarse {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: var(--colorCeleste);
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+       
+        transition: all 800ms ease-out;
+    }
+    
+    .register .btn-registrarse:active{
+        transform: scale(1.2);
+    }
+    
+    
