@@ -35,27 +35,53 @@ header{
     background-color: var(--colorAmarillo);
 }
 
+.logo-busqueda{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width:100%;
+ }
+
+ .logo-busqueda p{
+     display: block;
+     margin: auto;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     width: 70%;
+     font-size: 12px;
+ }
+
 .logo-contenedor{
     width: 50%;
     padding: 10px;
 }
 
-.logo{
-    width: 100%;
-}
-
 .barra-busqueda{
-    width:50vw;
+    width:50%;
+    padding-left: 5px;
+    
 }
 
 .barra-busqueda input{
-    width: 100%;
+    width:80%;
     height: 25px;
-    margin-bottom: 5px;
+}
+
+.barra-busqueda form{
+    width: 100%;
+    margin:auto
+}
+
+.logo{
+    width: 100%;
+}
+ 
+
+.barra-busqueda button {
+    height: 25px;
 }
 
 .barra-busqueda i{
-    border: solid 1px black;
     padding: 2px;
     background-color: white;
 }
@@ -99,13 +125,20 @@ main{
 }
 
 .section-ofertas, .section-ultimaVisita{
+    display:flex;
+    flex-wrap: wrap;
     margin-top:40px;
 }
 
-.section-ultimaVisita h6, .section-ofertas h6{
+.section-ultimaVisita h4{
+    width:100vw;
     font-size: 24px;
 }
 
+.section-ofertas h4{
+     width:100vw;
+    font-size: 24px;
+}
 
 article{
     display: flex;
@@ -146,7 +179,8 @@ article p i {
 
 .precio-descuento{
 display: flex;
-width: 50%;
+width: 80%;
+height: 40px;
 align-items: center;
 }
 
@@ -212,7 +246,52 @@ font-weight: 600;
     text-align: center;
 }
 
+footer{
+    background-color: #fff;
+    width: 100vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    
+}
+
 @media (min-width:361px){
+    .logo-contenedor{
+        width: 33%;
+        padding: 10px;
+    }
+    
+    .barra-busqueda{
+        display: flex;
+        width:33%;
+        
+    }
+    .logo-busqueda{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-busqueda p{
+        width: 33%;
+        font-size: 12px;
+     
+    }
+    .barra-busqueda form{
+        width:100%;
+        margin:auto;
+    
+    }
+    .barra-busqueda form input{
+        width:80%;
+    
+    }
+    .section-ofertas, .section-ultimaVisita{
+        display:flex;
+        justify-content: space-between;
+        margin-top:40px;
+    }
+
     article .contenedor-descripcion .nombre-producto{
         display: inline-block;
         font-weight: 600;
@@ -224,10 +303,68 @@ font-weight: 600;
     }
 
     article{
+        width: 40%;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }
 
+
+
+
 @media (min-width:769px){
+
+    .menu-hamburguesa{
+        display: none;
+    }
+
+    .navegacion{
+        display:flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .lista-nav1{
+        display: flex;
+        justify-content: space-around;
+        min-width: 40%;
+        padding:2px;
+    }
+
+    .lista-nav2{
+        display: flex;
+        justify-content: space-around;
+        min-width: 40%;
+        padding:2px;
+       
+    }
+
+    article{
+        width: 20%;
+    }
     
+    .barra-busqueda form input{
+        width:90%;
+    
+    }
+
+    .logo-busqueda p{
+        width: 33%;
+        font-size: 16px;
+     
+    }
+
+    .contenedor-iconos{
+       display: flex;
+       align-items: center;
+       align-content: center;
+     
+    }
+    
+    .contenedor-iconos div{
+      height: 150px;
+     }
+
+     .contenedor-iconos p{
+        height: 40px;
+       }
 }
