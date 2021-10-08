@@ -220,15 +220,18 @@ color: var(--colorVerde);
 flex-grow: 0.4;
 }
 
-
-article .contenedor-descripcion .nombre-producto{
-    display: none;
-    font-weight: 600;
-    padding-top: 15px;
+article:hover .contenedor-descripcion .nombre-producto{
+    opacity: 1;
+    
 }
 
-
-
+article .contenedor-descripcion .nombre-producto{
+    display: inline-block;
+    opacity: 0;
+    font-weight: 600;
+    padding-top: 15px;
+    transition: opacity 400ms ease-in ;
+}
 
 .img-articulo{
     width: 100%;
