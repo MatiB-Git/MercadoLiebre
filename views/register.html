@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../public/css/general.css">
+    <link rel="stylesheet" href="/css/general.css">
     
 
 </head>
@@ -15,7 +15,7 @@
     <header>
         <div class="logo-busqueda">
 
-          <div class="logo-contenedor"><a href="./home.html"><img class="logo" src="../public/images/logo-mercado-liebre.svg" alt="logo"></a>
+          <div class="logo-contenedor"><a href="/"><img class="logo" src="/images/logo-mercado-liebre.svg" alt="logo"></a>
            </div>
 
             <div class="barra-busqueda">
@@ -40,8 +40,8 @@
             </ul>
                 
             <ul class="lista-nav2">
-            <li><a href="./register.html">Crea tu cuenta</a><i class="far fa-id-card"></i></li>
-            <li><a href="./login.html">Ingresa</a><i class="fas fa-sign-in-alt"></i></li>
+            <li><a href="/register">Crea tu cuenta</a><i class="far fa-id-card"></i></li>
+            <li><a href="/login">Ingresa</a><i class="fas fa-sign-in-alt"></i></li>
             <li><a href="">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
             </ul>
         </nav>
@@ -60,13 +60,13 @@
             <!--NOMBRE Y APELLIDO-->
            <div class="nombre">
                <h3>Nombre y apellido</h3>
-                <input class="input-nombre" type="text" name="name" id="id" placeholder="Nombre y apellido">
+                <input class="input-nombre" type="text" name="name" id="id" placeholder="Nombre y apellido" minlength="5">
             </div>
 
             <!--NOMBRE DE USUARIO-->
              <div class="contenedor">
                 <h3>Nombre de usuario</h3>
-                <input class="input-contraseña" type="text" name="username" id="username" placeholder="Nombre de usuario">
+                <input class="input-contraseña" type="text" name="username" id="username" placeholder="Nombre de usuario" minlength="5" maxlength="15">
               </div>
 
               <!--FECHA DE NACIMIENTO-->
@@ -94,7 +94,7 @@
               <!--INTERESES-->
               <div class="contenedor">
                 <h3>Intereses</h3>
-                <input class="input-intereses" type="checkbox" value="Electro" name="intereses" id="electro">
+                <input class="input-intereses" type="checkbox" value="Electro" name="intereses" id="electro" >
                 <label for="electro">Electro</label>
               </div>
               <div class="contenedor">
@@ -129,13 +129,13 @@
               <!--CONTRASEÑA-->
               <div class="contenedor">
                 <h3>Contraseña</h3>
-                <input class="input-contraseña" type="password" name="pass" placeholder="Contraseña" minlength="8">
+                <input class="input-contraseña" type="password" name="pass" placeholder="Contraseña" minlength="8" maxlength="12">
               </div>
 
               <!--REPETIR CONTRASEÑA-->
               <div class="contenedor">
                 <h3>Repetir contraseña</h3>
-                <input class="input-contraseña" type="password" name="repeat-pass" placeholder="Repetir contraseña" minlength="8">
+                <input class="input-contraseña" type="password" name="repeat-pass" placeholder="Repetir contraseña" minlength="8" maxlength="12">
               </div>
 
 

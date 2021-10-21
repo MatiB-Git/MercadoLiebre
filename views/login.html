@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../public/css/general.css">
+    <link rel="stylesheet" href="/css/general.css">
     
 
 </head>
@@ -15,7 +15,7 @@
     <header>
         <div class="logo-busqueda">
 
-          <div class="logo-contenedor"><a href="./home.html"><img class="logo" src="../public/images/logo-mercado-liebre.svg" alt="logo"></a>
+          <div class="logo-contenedor"><a href="/"><img class="logo" src="/images/logo-mercado-liebre.svg" alt="logo"></a>
            </div>
 
             <div class="barra-busqueda">
@@ -40,8 +40,8 @@
             </ul>
                 
             <ul class="lista-nav2">
-            <li><a href="./register.html">Crea tu cuenta</a><i class="far fa-id-card"></i></li>
-            <li><a href="./login.html">Ingresa</a><i class="fas fa-sign-in-alt"></i></li>
+            <li><a href="/register">Crea tu cuenta</a><i class="far fa-id-card"></i></li>
+            <li><a href="/login">Ingresa</a><i class="fas fa-sign-in-alt"></i></li>
             <li><a href="">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
             </ul>
         </nav>
@@ -55,14 +55,14 @@
         <h1 class="titulo">¡Hola! Ingresa tu nombre y contraseña</h1>
          <div class="contenedor-form">
        
-        <form class="formulario" action="./home.html">
+        <form class="formulario" action="/home.html">
 
            <div class="nombre">
-                <input class="input-nombre" type="text" name="name" id="id" placeholder="ingresa tu nombre">
+                <input class="input-nombre" type="text" name="name" id="id" placeholder="ingresa tu nombre" minlength="5" maxlength="15">
             </div>
 
              <div class="contraseña">
-                <input class="input-contraseña" type="password" name="password" id="password" placeholder="ingresa tu contraseña">
+                <input class="input-contraseña" type="password" name="password" id="password" placeholder="ingresa tu contraseña" minlength="8" maxlength="12">
               </div>
 
               <div class="container-btn">
