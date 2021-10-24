@@ -40,8 +40,8 @@
             </ul>
                 
             <ul class="lista-nav2">
-            <li><a href="/register">Crea tu cuenta</a><i class="far fa-id-card"></i></li>
-            <li><a href="/login">Ingresa</a><i class="fas fa-sign-in-alt"></i></li>
+            <li><a href="/users/register">Crea tu cuenta</a><i class="far fa-id-card"></i></li>
+            <li><a href="/users/login">Ingresa</a><i class="fas fa-sign-in-alt"></i></li>
             <li><a href="">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
             </ul>
         </nav>
@@ -54,40 +54,50 @@
     <main class="main-login">
         <h1 class="titulo">¡Hola! Ingresa tus datos</h1>
          <div class="form-register">
+
+            <!--LOGICA DE VALIDACION-->
+          
+          
        
-        <form class="formulario" action="./home.html">
+        <form class="formulario" action="/users/register" method="POST" enctype="multipart/form-data">
 
             <!--NOMBRE Y APELLIDO-->
            <div class="nombre">
                <h3>Nombre y apellido</h3>
-                <input class="input-nombre" type="text" name="name" id="id" placeholder="Nombre y apellido" minlength="5">
+                <input class="input-nombre" type="text" name="fullname" id="id"  placeholder="Nombre y apellido" value=" <%= locals.old ? old.fullname : null %>">
+                <span class="text-error"><%= locals.errors && errors.fullname ? errors.fullname.msg : null %></span>
             </div>
 
             <!--NOMBRE DE USUARIO-->
              <div class="contenedor">
                 <h3>Nombre de usuario</h3>
-                <input class="input-contraseña" type="text" name="username" id="username" placeholder="Nombre de usuario" minlength="5" maxlength="15">
+                <input class="input-contraseña" type="text" name="username" id="username" placeholder="Nombre de usuario" value=" <%= locals.old ? old.username : null %>">
+                <span class="text-error"><%= locals.errors && errors.username ? errors.username.msg : null %></span>
               </div>
 
               <!--FECHA DE NACIMIENTO-->
               <div class="contenedor">
                 <h3>Fecha de nacimiento</h3>
-                <input class="input-contraseña" type="date" name="password" id="password" placeholder="Fecha de nacimiento">
+                <input class="input-contraseña" type="date" name="datebirth" id="password" placeholder="Fecha de nacimiento" value=" <%= locals.old ? old.datebirth : null %>" >
+                <span class="text-error"><%= locals.errors && errors.datebirth ? errors.datebirth.msg : null %></span>
               </div>
 
               <!--DOMICILIO-->
               <div class="contenedor">
                 <h3>Domicilio</h3>
-                <input class="input-contraseña" type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+                <input class="input-contraseña" type="text" name="domicilio" id="domicilio" placeholder="Domicilio" value="<%= locals.old ? old.domicilio : null %>">
+                <span class="text-error"><%= locals.errors && errors.domicilio ? errors.domicilio.msg : null %></span>
               </div>
 
               <!--PERFIL DE USUARIO-->
               <div class="prefil-usuario">
                 <h3>Perfil de usuario</h3>
-                <input class="input-prefil" type="radio" value="comprador" name="perfil" id="comprador">
+                <input class="input-prefil" type="radio" name="perfil" id="comprador" value=" <%= locals.old ? old.perfil : null %>">
                 <label for="comprador">Comprador</label>
-                <input class="input-prefil" type="radio" value="vendedor" name="perfil" id="vendedor">
+                <input class="input-prefil" type="radio" name="perfil" id="vendedor" value=" <%= locals.old ? old.perfil : null %>">
                 <label for="vendedor">Vendedor</label>
+                <div><span class="text-error"><%= locals.errors && errors.perfil ? errors.perfil.msg : null %></span></div>
+
               </div>
 
 
@@ -96,6 +106,8 @@
                 <h3>Intereses</h3>
                 <input class="input-intereses" type="checkbox" value="Electro" name="intereses" id="electro" >
                 <label for="electro">Electro</label>
+                
+
               </div>
               <div class="contenedor">
                
@@ -116,26 +128,31 @@
                 
                 <input class="input-intereses" type="checkbox" value="vida-sana" name="intereses" id="vida-sana">
                 <label for="vida-sana">Vida sana</label>
+
+                <div><span class="text-error"><%= locals.errors && errors.intereses ? errors.intereses.msg : null %></span></div>
               </div>
 
 
               <!--FOTO DE PERFIL-->
               <div class="contenedor">
                   <h3>Foto de perfil</h3>
-                <input class="input-intereses" type="file" value="foto" name="foto" id="foto">
+                <input class="input-intereses" type="file" value="foto" name="foto" id="foto" >
                 <label for="moda">Foto de perfil</label>
+                <div><span class="text-error"><%= locals.errors && errors.foto ? errors.foto.msg : null %></span></div>
               </div>
 
               <!--CONTRASEÑA-->
               <div class="contenedor">
                 <h3>Contraseña</h3>
-                <input class="input-contraseña" type="password" name="pass" placeholder="Contraseña" minlength="8" maxlength="12">
+                <input class="input-contraseña" type="password" name="password" placeholder="Contraseña">
+                <span class="text-error"><%= locals.errors && errors.password ? errors.password.msg : null %></span>
               </div>
 
               <!--REPETIR CONTRASEÑA-->
               <div class="contenedor">
                 <h3>Repetir contraseña</h3>
-                <input class="input-contraseña" type="password" name="repeat-pass" placeholder="Repetir contraseña" minlength="8" maxlength="12">
+                <input class="input-contraseña" type="password" name="password2" placeholder="Repetir contraseña">
+                <span class="text-error"><%= locals.errors && errors.password2 ? errors.password2.msg : null %></span>
               </div>
 
 
